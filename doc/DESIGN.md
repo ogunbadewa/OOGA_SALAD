@@ -24,7 +24,10 @@
     * Worked on a couple other controllers
 
 
-* Team Member #3
+* Team Member #3: (Joseph Ogunbadewa)
+    * Responsible for the movement of blocks in the grid, which handles the data structure that  is read by the view
+    * Handled the interpretation of key presses on the game player back end
+    * Developed the Artificial player extension
 
 * Team Member #4
 
@@ -111,6 +114,8 @@
 
 
 * Class #3
+    * A core class for out game is the Grid class. this handles the movement of blocks in the grid and defines all the public methods that other classes call to inteact with the grid. 
+    * Another core class is the KeyHandler abstraction, which is extended by all the keyhandler classes (LeftKeyHandler, RightKeyHandler, UpKeyHandler, DownKeyHandler, EnemyKeyHandler). It defines the way that each of these keypresses should modify the grid. 
 
 * Class #4
     * A core class for our project was the JsonManager class. This class was an example of the
@@ -143,7 +148,7 @@
   widgets
   and streamlining the process.
 
-* Change #3
+* Change #3: We changed the way we handled block behaviors from having a class for each atribute that a block can have to moving these attributes to a properties file and each block now has a map of  containing of possible attributes a block can have as well as a boolean indicating if the block has that attribute or not.  
 
 * Change #4
 
@@ -161,7 +166,8 @@
       as the
       visitor classes that implement the BlockVisitor.
 
-* Feature #3
+* Feature #3:
+    * It is very easy to add a new attribute to the possible attributes a block can have. just include that attribute in the strategies.properties file 
 
 * Feature #4:
     * It is very easy to add new blocks to the authoring environment and categorize them into the
