@@ -75,9 +75,8 @@ This project implements an authoring environment and player for multiple related
 
     * Clicking on the "load" button to load a new level may cause all crabs to clear from the
       screen, even if a user decides to click cancel on the file chooser dialog.
-    * When a block is removed in the authoring environment, it visually disappears on the view side
-      but is still present in the model/json. Hence, when the saved file is loaded, it begins to
-      show the removed block again.
+    * When a block is removed in the authoring environment, it doesn't get removed from the json if
+      the file name is kept the same. Creating a new file incorporates the updates.
 
 
 * Features implemented:

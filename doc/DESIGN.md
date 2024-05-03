@@ -25,7 +25,8 @@
 
 
 * Team Member #3: (Joseph Ogunbadewa)
-    * Responsible for the movement of blocks in the grid, which handles the data structure that  is read by the view
+    * Responsible for the movement of blocks in the grid, which handles the data structure that is
+      read by the view
     * Handled the interpretation of key presses on the game player back end
     * Developed the Artificial player extension
 
@@ -114,8 +115,11 @@
 
 
 * Class #3
-    * A core class for out game is the Grid class. this handles the movement of blocks in the grid and defines all the public methods that other classes call to inteact with the grid. 
-    * Another core class is the KeyHandler abstraction, which is extended by all the keyhandler classes (LeftKeyHandler, RightKeyHandler, UpKeyHandler, DownKeyHandler, EnemyKeyHandler). It defines the way that each of these keypresses should modify the grid. 
+    * A core class for out game is the Grid class. this handles the movement of blocks in the grid
+      and defines all the public methods that other classes call to inteact with the grid.
+    * Another core class is the KeyHandler abstraction, which is extended by all the keyhandler
+      classes (LeftKeyHandler, RightKeyHandler, UpKeyHandler, DownKeyHandler, EnemyKeyHandler). It
+      defines the way that each of these keypresses should modify the grid.
 
 * Class #4
     * A core class for our project was the JsonManager class. This class was an example of the
@@ -148,7 +152,10 @@
   widgets
   and streamlining the process.
 
-* Change #3: We changed the way we handled block behaviors from having a class for each atribute that a block can have to moving these attributes to a properties file and each block now has a map of  containing of possible attributes a block can have as well as a boolean indicating if the block has that attribute or not.  
+* Change #3: We changed the way we handled block behaviors from having a class for each atribute
+  that a block can have to moving these attributes to a properties file and each block now has a map
+  of containing of possible attributes a block can have as well as a boolean indicating if the block
+  has that attribute or not.
 
 * Change #4
 
@@ -167,7 +174,8 @@
       visitor classes that implement the BlockVisitor.
 
 * Feature #3:
-    * It is very easy to add a new attribute to the possible attributes a block can have. just include that attribute in the strategies.properties file 
+    * It is very easy to add a new attribute to the possible attributes a block can have. just
+      include that attribute in the strategies.properties file
 
 * Feature #4:
     * It is very easy to add new blocks to the authoring environment and categorize them into the
@@ -186,9 +194,10 @@
       always pushing them.
 
 * Feature #3
-    * One of the bugs in our features in the removal of blocks from the backend after they are
-      removed from the authoring frontend. Currently, despite not showing up on the frontend, blocks
-      will be saved in their past position and show up when a file is loaded.
+    * One of the bugs in our features in the removal of blocks from the backend when a file is not
+      renamed.
+      The block is not removed from the json if the same file is resaved rather then creating a new
+      file.
 
 * Feature #4
     * One of the features that we could not fully implement was handling the saving and loading of
